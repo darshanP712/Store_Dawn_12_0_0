@@ -59,7 +59,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
+        extensions: ['.js','.jsx','.ts','.tsx','.json','.css','.scss','.html','.htm','.xml','.svg','.jpg','.jpeg','.png','.gif','.bmp','.ico','.webp','.woff','.woff2','.ttf','.eot','.otf','.csv','.xls','.xlsx','.txt','.md','.pdf','.doc','.docx','.ppt','.pptx'],
         modules: ['src', 'node_modules']
     },
     output: {
