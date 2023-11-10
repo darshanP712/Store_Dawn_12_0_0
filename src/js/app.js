@@ -4,3 +4,4 @@ function myFunction() {
     document.getElementById("demo").innerHTML =
     text.replace("Microsoft","W3Schools");
   }
+  myFunction();
