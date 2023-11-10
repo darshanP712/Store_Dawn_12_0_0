@@ -1,1 +1,1 @@
-(()=>{var e;console.log("hello webpack"),e=document.getElementById("demo").innerHTML,document.getElementById("demo").innerHTML=e.replace("Microsoft","W3Schools")})();
+console.log("hello webpack");
