@@ -1,1 +1,1 @@
-(()=>{var e;console.log("hello webpack"),e=document.getElementById("demo").innerHTML,document.getElementById("demo").innerHTML=e.replace("Microsoft","Webpack")})();
+(()=>{console.log("hello webpack"),customElements.define("my-component",class extends HTMLElement{connectedCallback(){this.innerHTML='<div class="bg-blue-200 w-max h-12 text-2xl mx-auto my-2 px-5 py-0">Web Components</div>'}});var e=document.querySelector("#host"),o=e.attachShadow({mode:"open"}),t=document.createElement("span");t.textContent="I'm in the shadow DOM",o.appendChild(t),console.log(e.shadowRoot)})();
