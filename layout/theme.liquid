@@ -298,8 +298,14 @@
     <div id="host"></div>
     <span>I'm not in the shadow DOM</span>  
 
-    <datetime-countdown></datetime-countdown>
-    
+    <datetime-countdown
+    data-module="datetime-countdown"
+    data-time="1701388740">
+    <span
+      class="transition-all opacity-0 "
+      data-text>00days 00hours 00mins 00seconds</span>
+  </datetime-countdown>
+
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}

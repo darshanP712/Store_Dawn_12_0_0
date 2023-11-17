@@ -25,12 +25,12 @@ class Countdown extends HTMLElement {
       const remaining = expiry - now;
   
       const day = Math.floor(remaining / (60 * 60 * 24));
-      const hour = Math.floor((remaining - day  (60 * 60 * 24)) / (60 * 60));
+      const hour = Math.floor((remaining - day * (60 * 60 * 24)) / (60 * 60));
       const minute = Math.floor(
-        (remaining - day  (60 * 60 * 24) - hour  (60 * 60)) / 60
+        (remaining - day * (60 * 60 * 24) - hour * (60 * 60)) / 60
       );
       const second = Math.floor(
-        remaining - day  (60 * 60 * 24) - hour  (60 * 60) - minute * 60
+        remaining - day * (60 * 60 * 24) - hour * (60 * 60) - minute * 60
       );
   
       if (this.dataset < now) {
@@ -42,4 +42,6 @@ class Countdown extends HTMLElement {
       }
     }
   }
+  
   customElements.define('datetime-countdown', Countdown);
+  
