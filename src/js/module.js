@@ -49,10 +49,10 @@ class Countdown extends HTMLElement {
     constructor() {
       super();
 
-      this.addEventListener('mouseover', () => {
+      this.childNodes[0].addEventListener('mouseover', () => {
         this.style.color = 'red';
       });
-      this.addEventListener('mouseout', () => {
+      this.childNodes[0].addEventListener('mouseout', () => {
         this.style.color = 'green';
       });
     }
