@@ -44,3 +44,22 @@ class Countdown extends HTMLElement {
   
   customElements.define('datetime-countdown', Countdown);
   
+
+  class CoolHeading extends HTMLElement {
+    constructor() {
+      super();
+
+      this.addEventListener('mouseover', () => {
+        this.style.color = 'red';
+      });
+      this.addEventListener('mouseout', () => {
+        this.style.color = 'blue';
+      });
+    }
+
+    connectedCallback() {
+      this.style.color = 'blue';
+    }
+  }
+
+  customElements.define('cool-heading', CoolHeading);
