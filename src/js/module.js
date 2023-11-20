@@ -52,6 +52,9 @@ class Countdown extends HTMLElement {
       this.addEventListener('mouseover', () => {
         this.style.color = 'red';
       });
+      this.addEventListener('mouseout', () => {
+        this.style.color = 'green';
+      });
     }
 
     connectedCallback() {
