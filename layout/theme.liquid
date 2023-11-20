@@ -287,7 +287,7 @@
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
 
-     {% comment %} <button onclick="myFunction()">Try it</button>
+     {% comment %} <button onclick="myFunction()">Try it</button> 
     <p id="demo">Please visit Microsoft!</p>  {% endcomment %}
     
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -297,6 +297,14 @@
     <my-component></my-component>
     <div id="host"></div>
     <span>I'm not in the shadow DOM</span>  
+
+    <datetime-countdown
+    data-module="datetime-countdown"
+    data-time="1701388740">
+    <span
+      class="transition-all opacity-0 "
+      data-text>00days 00hours 00mins 00seconds</span>
+  </datetime-countdown>
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
