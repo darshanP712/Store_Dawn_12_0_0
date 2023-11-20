@@ -19,3 +19,12 @@ console.log("hello webpack");
   span.textContent = "I'm in the shadow DOM";
   shadow.appendChild(span);
   console.log(host.shadowRoot);
+
+
+  class Todotems extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = "my todo list";
+    }
+  }
+
+  customElements.define("todo-list", Todotems);
