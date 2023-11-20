@@ -59,6 +59,9 @@ class Countdown extends HTMLElement {
 
     connectedCallback() {
       this.style.color = 'blue';
+      const template = document.querySelector('template');
+      const clone = document.importNode(template.content, true);
+      this.appendChild(clone);
     }
   }
 
