@@ -20,7 +20,6 @@ class Countdown extends HTMLElement {
   
     updateCountdown() {
       const now = new Date().getTime() / 1000;
-  
       const expiry = this.dataset.time;
       const remaining = expiry - now;
   
