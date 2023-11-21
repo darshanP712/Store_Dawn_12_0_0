@@ -303,26 +303,28 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
 
+    <div class="my-0 mx-auto text-center ">  
       <my-component></my-component>
       <div id="host"></div>
       <span>I'm not in the shadow DOM</span>  
-  
+
       <datetime-countdown
       data-module="datetime-countdown"
       data-time="1701388740">
       <span
         class="transition-all opacity-0 "
         data-text>00days 00hours 00mins 00seconds</span>
-    </datetime-countdown>
-  
-    <template>
+      </datetime-countdown>
+
+      <template>
       <h1>Hello world!</h1>
-    </template>
-  
-    <cool-heading>
+      </template>
+
+      <cool-heading>
       helloooo
-    </cool-heading>
-    
+      </cool-heading>
+    </div>
+
     </main>
 
     {% sections 'footer-group' %}
